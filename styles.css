@@ -1,0 +1,26 @@
+/* styles */
+
+@charset "utf-8";
+
+body {
+	margin: 10px;
+}
+
+div.container {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+div.lamps {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+div.lamp {
+	width: 64px;
+	height: 64px;
+	background-color: lightslategray;
+	border: 3px solid black;
+}
