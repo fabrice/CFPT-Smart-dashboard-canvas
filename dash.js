@@ -66,7 +66,7 @@ function refreshLamp( lamp_id, lamp_json ) {
     lamp_element.style.borderColor = (power) ? "green" : "black";
 
     // blub color
-    lamp_element.style.backgroundColor = "white";
+    lamp_element.style.backgroundColor = (power) ? "white" : "black";
 
     console.log( "lamp " + lamp_id + " => power : " + power + ", brightness : " + brightness );
 }
