@@ -81,7 +81,7 @@ function refreshLamp( lamp_id, lamp_json ) {
 // CIEtoRGBWeb
 // basically CIEtoRGB, with some tweaks to look better
 function CIEtoRGBWeb( x, y, bri100 ) {
-    return CIEtoRGB( x, y, bri100 * 80 / 255 + 20 );
+    return CIEtoRGB( x, y, bri100 * 80 / 100 + 20 );
 }
 
 //---------------------------------------------------------
