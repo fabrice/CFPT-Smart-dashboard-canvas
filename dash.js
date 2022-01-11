@@ -328,7 +328,7 @@ function colorComponentsToHex( r, g, b ) {
 
 //---------------------------------------------------------
 
-// timed operations
+// timer
 
 //---------------------------------------------------------
 // fetchAndRefreshLamps will be called every S seconds for M minutes
@@ -364,5 +364,16 @@ var execution_count = (60 * 60) / (interval / 1000); // 60 minutes
 var execution_counter = 0;
 
 var refresher = window.setInterval( callFetchAndRefreshLamps, interval );
+
+//---------------------------------------------------------
+
+// events
+
+//---------------------------------------------------------
+// lampClicked will be called when a lamp is clicked
+
+function lampClicked( lamp_element ) {
+	console.log( "Lamp " + lamp_element.id + " clicked." );
+}
 
 //-----------------------------------------------------------------------------
