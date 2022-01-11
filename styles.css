@@ -19,8 +19,11 @@ div.lamps {
 }
 
 div.lamp {
-	width: 64px;
-	height: 64px;
 	background-color: lightslategray;
-	border: 3px solid black;
+	border: 1px solid black;
+}
+
+div.lamp img {
+	display: block;
+	width: 240px;
 }

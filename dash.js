@@ -1,11 +1,14 @@
 // Dashboard Hue
-// Version 0
+// Version 1
 
 
 //-----------------------------------------------------------------------------
 // URLs
 
-const hue_base_url = 'http://10.5.63.15/api/8yO7AH4ixMnF9Tg1QZCEfwn-cn2F9LwrrlEwMP-B/';
+const hue_base_ip = '10.5.63.15';
+const hue_base_key = '8yO7AH4ixMnF9Tg1QZCEfwn-cn2F9LwrrlEwMP-B';
+
+const hue_base_url = 'http://' + hue_base_ip + '/api/' + hue_base_key + '/';
 const hue_lights_url = hue_base_url + 'lights';
 const hue_sensors_url = hue_base_url + 'sensors';
 
@@ -65,7 +68,7 @@ function refreshLamp( lamp_id, lamp_json ) {
 	// border color
 	lamp_element.style.borderColor = (power) ? "green" : "black";
 
-	// blub color
+	// lamp color
 	lamp_element.style.backgroundColor = (power) ? "white" : "black";
 
 	console.log( "lamp " + lamp_id + " => power : " + power + ", brightness : " + brightness );
