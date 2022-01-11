@@ -373,7 +373,18 @@ var refresher = window.setInterval( callFetchAndRefreshLamps, interval );
 // lampClicked will be called when a lamp is clicked
 
 function lampClicked( lamp_element ) {
-	console.log( "Lamp " + lamp_element.id + " clicked." );
+	let lamp_id = lamp_element.id;
+	console.log( "Lamp " + lamp_id + " clicked." );
+
+	if ( lamp_id === "lamp-1" ) {
+	}
+	else if ( lamp_id === "lamp-2" ) {
+	}
+	else if ( lamp_id === "lamp-3" ) {
+	}
+	else {
+		console.log( "lampClicked called - unexpected lamp " + lamp_id + " clicked." );
+	}
 }
 
 //-----------------------------------------------------------------------------
